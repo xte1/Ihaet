@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "i heat",
+    "slug": "iheat-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/tv-icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#09090b"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.iheat.app"
+    }
+  }
+}
