@@ -9,10 +9,10 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
@@ -27,7 +27,7 @@ jobs:
           cd ios && xcodebuild -workspace iheat.xcworkspace -scheme iheat -configuration Release -sdk iphonesimulator CONFIGURATION_BUILD_DIR=build
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: iheat-app-build
           path: ios/build/
