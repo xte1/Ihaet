@@ -24,10 +24,10 @@ jobs:
       - name: Expo Prebuild & Build iOS
         run: |
           npx expo prebuild --platform ios
-          cd ios && xcodebuild -workspace iheatapp.xcworkspace -scheme iheatapp -configuration Release -sdk iphonesimulator CONFIGURATION_BUILD_DIR=build
+          cd ios && xcodebuild -workspace iheat.xcworkspace -scheme iheat -configuration Release -sdk iphonesimulator CONFIGURATION_BUILD_DIR=build
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: iheat-app-build
           path: ios/build/
